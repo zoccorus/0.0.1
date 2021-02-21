@@ -1,3 +1,6 @@
+# 1.0.0
+first version of wrapper offline lol
+
 # Wrapper: Offline
 After the announcement that GoAnimate Wrapper (a project by VisualPlugin/Windows81) would be shut down, Wrapper: Offline was created. Unlike the original project, Wrapper: Offline can not be shut down. You have the files all on your computer. This project is important for historical and archival purposes, as the ability to use this legacy editor and themes would be completely gone without it. Besides simply emulating the original Flash editor, Wrapper also adds some additional features, such as additional poses for Comedy World characters. And Wrapper: Offline will soon add additional things too in a future update.
 
