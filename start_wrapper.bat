@@ -1,7 +1,7 @@
 :: Wrapper: Offline Launcher
 :: Author: benson#0411
 :: License: MIT
-set WRAPPER_VER=1.0.1
+set WRAPPER_VER=0.0.0
 :: Code mostly based on tronscript (https://github.com/bmrf/tron) because it's very advanced batch coding and staring at other people's code attempting to interpret it is how i learn coding i guess
 
 ::::::::::::::::::::
