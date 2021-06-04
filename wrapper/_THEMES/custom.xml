@@ -4296,75 +4296,6 @@
 		<tags>family,_free,_cat:Stock characters</tags>
 	</char>
 
-	<char id="324728788" name="Simslover163" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="327764713" name="VictorAnimate" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="327764688" name="KingRay" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="327779707" name="SamTGA" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="327764516" name="GreenAnimate" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="327764531" name="VyondLover2019" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="327779829" name="Caillou Perkyshitz" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="327779856" name="Ryan Animatez" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="327779904" name="Stickman Jackers" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="327779944" name="Wariobros194" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="327779960" name="Doctor (Wix Stock Character)" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="327779989" name="LucienTheVyondGuy" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="328120077" name="Tajmir The Random Fan 2019" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="328120116" name="hatBlueBoyNickFan VGCP GA" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="328120158" name="JazzyJay27" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="328079567" name="fart no eyes 9" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="328120191" name="Generated Wrestler" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="328120182" name="TheVideoEditorGuy6579" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="328120172" name="Rack Animate" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="328120167" name="kanwneer" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="328120151" name="KnucklesHedgehog2010" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="328120076" name="Tuck the Duck" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
-	<char id="328120041" name="SuperYoshiAnthony" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Submissions</tags>
-	</char>
 
 	<char id="327412169" enc_asset_id="0nmQZ8bWBt5g" name="GoTube" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
 		<tags>family,_free,_cat:GoAnimators</tags>
@@ -4372,16 +4303,7 @@
 	<char id="327275957" enc_asset_id="05jPKL20LRHs" name="LukeAnimate" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
 		<tags>family,_free,_cat:GoAnimators</tags>
 	</char>
-	<char id="327764308" enc_asset_id="0UilnE4G5uzw" name="BrentAnimate" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
-	<char id="327764453" enc_asset_id="0yaYs6eX-334" name="RareYellowWUUTBee" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
 	<char id="327764148" name="CanadianScout" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
-	<char id="327764650" name="Isaac Anderson Animations" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
 		<tags>family,_free,_cat:GoAnimators</tags>
 	</char>
 	<char id="327764579" name="NathanWin7587" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
@@ -4393,32 +4315,6 @@
 	<char id="327764372" name="African Vulture" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
 		<tags>family,_free,_cat:GoAnimators</tags>
 	</char>
-	<char id="327764522" name="The FunEditor4" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
-	<char id="327764594" name="sasmter5677" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
-	<char id="327765082" name="Fartnoise9" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
-	<char id="329767001" name="GoTest334" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
-	<char id="327764590" name="Brendan Barney" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
-	<char id="327779791" name="Richie Verdi" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
-
-	<char id="327269881" name="GoPlushy" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Special Thanks</tags>
-	</char>
-	<char id="327764698" name="chaserserasers07" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Special Thanks</tags>
-	</char>
-
 	<char id="327412169" name="Made by GoTube" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
 		<tags>family,_free,_cat:Made by GoTube</tags>
 	</char>
