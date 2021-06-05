@@ -1,3 +1,4 @@
+
 :: Wrapper: Offline Settings
 :: Change parts of this file to change settings that Wrapper uses.
 
@@ -15,7 +16,7 @@ endlocal
 ::::::::::::::::::::
 
 :: Change this to yes to see more of what exactly Wrapper is doing, and never clear the screen. Useful for development and troubleshooting
-set VERBOSEWRAPPER=no
+set VERBOSEWRAPPER=yes
 
 :: If checking for dependencies takes too long and you know you have them all, you can skip it entirely and it will just attempt to boot Wrapper right away.
 set SKIPCHECKDEPENDS=no
