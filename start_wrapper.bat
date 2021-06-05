@@ -384,9 +384,7 @@ if %HTTPSCERT_DETECTED%==no (
 	if %VERBOSEWRAPPER%==yes (
 		certutil -addstore -f -enterprise -user root the.crt
 	) else (
-		certutil -addstore -f -enterprise -user root the.crt >> NUL
-	)
-	echo watch benson on youtube >> isinstalled.txt
+		certutil -addstore -f -enterprise -user root the.crt >>   
 )
 popd
 :after_cert_install
