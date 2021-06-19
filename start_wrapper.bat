@@ -32,8 +32,6 @@ echo Loading settings...
 call settings.bat
 echo:
 
-if %VERBOSEWRAPPER%==yes ( echo Verbose mode activated. && echo:)
-
 ::::::::::::::::::::::
 :: Dependency Check ::
 ::::::::::::::::::::::
@@ -88,7 +86,6 @@ if %FLASH_DETECTED%==yes (
 :flash_checked
 
 :: Node.js
-if %VERBOSEWRAPPER%==yes ( echo Checking for Node.js installation... )
 for /f "delims=" %%i in ('npm -v 2^>nul') do set output=%%i
 IF "!output!" EQU "" (
 	echo Node.js could not be found.
@@ -104,7 +101,6 @@ IF "!output!" EQU "" (
 :nodejs_checked
 
 :: http-server
-if %VERBOSEWRAPPER%==yes ( echo Checking for http-server installation... )
 npm list -g | find "http-server" >> NUL
 if %ERRORLEVEL% == 0 (
 	echo http-server is installed.
@@ -118,7 +114,6 @@ if %ERRORLEVEL% == 0 (
 :httpserver_checked
 
 :: Check if the cert has been installed yet
-if %VERBOSEWRAPPER%==yes ( echo Checking for HTTPS certificate... )
 :: ...in probably the least reliable way possible.
 pushd server
 if exist "isinstalled.txt" (
@@ -166,12 +161,10 @@ if /i "%PROCESSOR_ARCHITEW6432%"=="AMD64" set CPU_ARCHITECTURE=64
 :: Skipped in Safe Mode, just in case anyone is running Wrapper in safe mode... for some reason
 :: and also because that was just there in the code i used for this and i was like "eh screw it why remove it"
 if %ADMINREQUIRED%==yes (
-	if %VERBOSEWRAPPER%==yes ( echo Checking for Administrator rights... && echo:)
 	if /i not "%SAFE_MODE%"=="yes" (
 		fsutil dirty query %systemdrive% >NUL 2>&1
 		if /i not !ERRORLEVEL!==0 (
-			color cf
-			if %VERBOSEWRAPPER%==no ( cls )
+			color cff
 			echo:
 			echo  ERROR
 			echo:
@@ -185,7 +178,6 @@ if %ADMINREQUIRED%==yes (
 			exit
 		)
 	)
-	if %VERBOSEWRAPPER%==yes ( echo Admin rights detected. && echo:)
 )
 
 :: Flash Player
@@ -205,7 +197,6 @@ if %FLASH_DETECTED%==no (
 	echo Installing Flash Player...
 	echo:
 	if %INCLUDEDCHROMIUM%==yes (
-		if %VERBOSEWRAPPER%==yes ( echo Popup-Chromium option chosen, skipping browser question. && echo:)
 		set BROWSER_TYPE=chromium
 		goto :escape_browser_ask
 	) else (
@@ -237,12 +228,6 @@ if %FLASH_DETECTED%==no (
 		if '%choice%'=='6' goto firefox_chosen
 		if '%choice%'=='0' echo Flash will not be installed.&& goto after_flash_install
 		echo You must pick a browser.&& goto browser_ask
-
-		:chromium_chosen
-		set BROWSER_TYPE=chromium && if %VERBOSEWRAPPER%==yes ( echo Chromium-based browser picked. && echo:) && goto escape_browser_ask
-
-		:firefox_chosen
-		set BROWSER_TYPE=firefox && if %VERBOSEWRAPPER%==yes ( echo Firefox-based browser picked. ) && goto escape_browser_ask
 	)
 
 	:escape_browser_ask
@@ -258,7 +243,6 @@ if %FLASH_DETECTED%==no (
 	:: Summon the Browser Slayer
 	echo Ripping and tearing browsers...
 	for %%i in (firefox,palemoon,iexplore,chrome,chrome64,opera) do (
-		if %VERBOSEWRAPPER%==yes (
 			 taskkill /f /im %%i.exe /t
 			 wmic process where name="%%i.exe" call terminate
 		) else (
@@ -288,14 +272,12 @@ if %NODEJS_DETECTED%==no (
 	echo:
 	:: Install Node.js
 	if %CPU_ARCHITECTURE%==64 (
-		if %VERBOSEWRAPPER%==yes ( echo 64-bit system detected, installing 64-bit Node.js. )
 		echo Proper Node.js installation doesn't seem possible to do automatically.
 		echo You can just keep clicking next until it finishes, and Wrapper will continue once it closes.
 		msiexec /i "utilities\node_windows_x64.msi" %INSTALL_FLAGS%
 		goto nodejs_installed
 	)
 	if %CPU_ARCHITECTURE%==32 (
-		if %VERBOSEWRAPPER%==yes ( echo 32-bit system detected, installing 32-bit Node.js. )
 		echo Proper Node.js installation doesn't seem possible to do automatically.
 		echo You can just keep clicking next until it finishes, and Wrapper will continue once it closes.
 		msiexec /i "utilities\node_windows_x32.msi" %INSTALL_FLAGS%
@@ -315,7 +297,7 @@ if %NODEJS_DETECTED%==no (
 		set /p CHOICE= Response:
 		echo:
 		if not '%choice%'=='' set choice=%choice:~0,1%
-		if '%choice%'=='1' msiexec "utilities\node-v13.12.0-x32.msi" %INSTALL_FLAGS% && if %VERBOSEWRAPPER%==yes ( echo Attempting 32-bit Node.js installation. ) && goto nodejs_installed
+		if '%choice%'=='1' msiexec "utilities\node-v13.12.0-x32.msi" %INSTALL_FLAGS%
 		if '%choice%'=='3' echo Node.js will not be installed. && goto after_nodejs_install
 		echo You must pick one or the other.&& goto architecture_ask
 	)
@@ -337,7 +319,6 @@ if %HTTPSERVER_DETECTED%==no (
 		npm install http-server -g
 
 		:: Double check for installation
-		if %VERBOSEWRAPPER%==yes ( echo Checking for http-server installation... )
 	 npm list -g | find "http-server" >> NUL
 	 if %ERRORLEVEL% == 0 (
 			goto http-server-installed
@@ -351,7 +332,6 @@ if %HTTPSERVER_DETECTED%==no (
 		npm install utilities\http-server-master -g
 
 		:: Triple check for installation
-		if %VERBOSEWRAPPER%==yes ( echo Checking for http-server installation... )
 	 npm list -g | find "http-server" >> NUL
 	 if %ERRORLEVEL% == 0 (
 			goto http-server-installed
@@ -381,7 +361,6 @@ if %HTTPSERVER_DETECTED%==no (
 :: Install HTTPS certificate
 pushd server
 if %HTTPSCERT_DETECTED%==no (
-	if %VERBOSEWRAPPER%==yes (
 		certutil -addstore -f -enterprise -user root the.crt
 	) else (
 		certutil -addstore -f -enterprise -user root the.crt >>   
@@ -392,7 +371,6 @@ popd
 :: Alert user to restart Wrapper without running as Admin
 if %ADMINREQUIRED%==yes (
 	color 20
-	if %VERBOSEWRAPPER%==no ( cls )
 	echo:
 	echo Dependencies needing Admin now installed^^!
 	echo:
@@ -456,7 +434,6 @@ echo Wrapper has been started^^! The video list should now be open.
 
 title Wrapper: Offline v%WRAPPER_VER%
 :wrapperstartedcls
-if %VERBOSEWRAPPER%==no ( cls )
 :wrapperstarted
 
 echo:
@@ -542,7 +519,6 @@ start notepad.exe README.txt
 goto wrapperidle
 
 :clear_idle_screen
-if %VERBOSEWRAPPER%==yes ( echo Verbose mode enabled, clearing blocked. )
 goto wrapperstartedcls
 
 :watchbensononyoutube
