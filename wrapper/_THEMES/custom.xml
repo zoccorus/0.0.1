@@ -4295,27 +4295,4 @@
 	<char id="1443007" enc_asset_id="0H7iBqxkzmCQ" name="Zombie" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
 		<tags>family,_free,_cat:Stock characters</tags>
 	</char>
-
-
-	<char id="327412169" enc_asset_id="0nmQZ8bWBt5g" name="GoTube" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
-	<char id="327275957" enc_asset_id="05jPKL20LRHs" name="LukeAnimate" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
-	<char id="327764148" name="CanadianScout" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
-	<char id="327764579" name="NathanWin7587" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
-	<char id="327764259" name="Tbone Animate" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
-	<char id="327764372" name="African Vulture" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:GoAnimators</tags>
-	</char>
-	<char id="327412169" name="Made by GoTube" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
-		<tags>family,_free,_cat:Made by GoTube</tags>
-	</char>
 </theme>
